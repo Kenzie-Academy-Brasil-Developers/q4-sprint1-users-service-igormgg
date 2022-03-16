@@ -23,16 +23,7 @@ app.listen(3000, () =>
   console.log('Application running on http://localhost:3000')
 );
 
-const usersDB = [
-  //   {
-  //     uuid: 'a4a7da63-4e06-43b1-acde-bc891e795cc8',
-  //     createdOn: '2022-03-15T22:43:09.217Z',
-  //     email: 'daniel@kenzie.com',
-  //     age: 18,
-  //     username: 'daniel',
-  //     password: '$2a$10$UOVaXmLEZGQfFjWnFce.HORV5bMni2jV6SWJtYD15vkyzcE5m54Tq',
-  //   },
-];
+const usersDB = [];
 
 const usersSchema = yup.object().shape({
   username: yup.string().required(),
