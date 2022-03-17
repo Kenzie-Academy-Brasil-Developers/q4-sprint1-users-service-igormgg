@@ -125,11 +125,7 @@ app.post(
 );
 
 app.get('/users', authUser, (req, res) => {
-  const listUsersWithoutPassword = JSON.parse(JSON.stringify(usersDB));
-
-  listUsersWithoutPassword.forEach((user) => delete user.password);
-
-  res.status(200).json(listUsersWithoutPassword);
+  res.status(200).json(usersDB);
 });
 
 app.put(
